@@ -1,0 +1,51 @@
+# Configuration file for the EEG streaming layer
+
+# Wi-Fi shield configuration
+[wifi]
+
+# timeout for device discovery in seconds
+timeout = 100
+
+# set if using wifi shield in direct mode
+# default IP of the wifi shield is 192.168.4.1
+ip_address = "192.168.4.1"
+
+# set ipport to any free local port
+ip_port = 5300
+
+# Board configuration
+[board]
+
+# Set serial_port to the serial port the board is connected to
+serial_port = "COM5"
+
+# -- VIRTUAL BOARDS --
+# NO BOARD = -100
+# PLAYBACK_FILE BOARD = -3
+# SYNTHETIC BOARD = -1
+
+# -- OpenBCI BOARDS --
+# CYTON BOARD (8-chan) = 0
+# CYTON DAISY BOARD (16-chan) = 2
+# CYTON WIFI BOARD = 5
+# CYTON DAISY WIFI BOARD = 6
+board_id = -1
+
+# Environment configuration
+[env]
+display_graph = true
+output_fmt = "mne"
+run_model = false
+run_aquisition = false
+model_path = "models/lemodeltesting01.joblib"
+
+#  Aquisition configuration
+[aquisition]
+warmup_trials = 2
+trials_per_class = 10
+perform_time = 0.1
+wait_time = 0.1
+# Physionet runs do not include pauses
+# pause_every = 30
+# pause_duration = 10
+fontsize = 25

@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.mainlogo img {
+    width: 500px;
+    height: 150px; 
+}
+
+.link {
+    
+}
+
+.link a{
+    color: #5C5C5C;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 80%;
+}
+
